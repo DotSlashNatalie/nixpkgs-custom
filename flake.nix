@@ -23,7 +23,7 @@
           import ./nixos/lib/eval-config.nix (args // {
             modules = modules ++
               [ { system.nixos.versionSuffix =
-                    "dirty"}";
+                    "dirty";
                   system.nixos.revision = lib.mkIf (self ? rev) self.rev;
                 }
               ];
