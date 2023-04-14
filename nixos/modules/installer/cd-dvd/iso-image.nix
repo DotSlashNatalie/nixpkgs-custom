@@ -226,12 +226,12 @@ in
       '';
     };
 
-#    isoImage.makeUsbBootable = mkOption {
-#      default = false;
-#      description = ''
-#        Whether the ISO image should be bootable from CD as well as USB.
-#      '';
-#    };
+    isoImage.makeUsbBootable = mkOption {
+      default = false;
+      description = ''
+        Whether the ISO image should be bootable from CD as well as USB.
+      '';
+    };
 
     isoImage.splashImage = mkOption {
       default = pkgs.fetchurl {
