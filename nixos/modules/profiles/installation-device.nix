@@ -22,10 +22,10 @@ with lib;
   config = {
 
     # Enable in installer, even if the minimal profile disables it.
-    services.nixosManual.enable = mkForce true;
+    # services.nixosManual.enable = mkForce true;
 
     # Show the manual.
-    services.nixosManual.showManual = true;
+    # services.nixosManual.showManual = true;
 
     # Let the user play Rogue on TTY 8 during the installation.
     #services.rogue.enable = true;
